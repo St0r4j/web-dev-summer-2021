@@ -2,6 +2,9 @@
 
 ## Week 2 Day 4
 
+JS Carousel
+Homework clone down walkthrough
+pairing session
 EOD Sprint Retrospective
 
 ### Learning Objectives

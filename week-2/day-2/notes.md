@@ -9,6 +9,8 @@ A JavaScript function is executed when "something" invokes it (calls it).
 
 
 ```js
+// input (p1, p2)
+// p1 and p2 are called parameters
 function myFunction(p1, p2) {
   return p1 * p2;   // The function returns the product of p1 and p2
 }
@@ -28,8 +30,15 @@ The code to be executed, by the function, is placed inside curly brackets: {}
 ```js
 function name(parameter1, parameter2, parameter3) {
   // code to be executed
+  const obj = {}
+  obj.name = 'brett'
 }
 ```
+<!-- 
+run a function also called invoke
+
+name('brett', 'cunningham', 35) // 'brett', 'cunningham', 35 are called arguments 
+-->
 
 Function ```parameters``` are listed inside the parentheses () in the function definition.
 

@@ -1,0 +1,17 @@
+/* selector {
+    property: value    
+*/
+
+/* ids are used for unique styling */
+
+#myHeader {
+    color: aqua;
+}
+
+/* classes are used to style
+multiple elements 
+*/
+
+.changeBG {
+    font-size: 40px;
+}

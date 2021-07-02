@@ -6,17 +6,18 @@
 // object syntax
 // object creation
 // variable declaration and assignment
-// const myToDoObj = {
-//    key1: value,
-//    key2: value,
-//    key3: value,
-//}
+const myToDoObj = {
+    key1: value,
+    key2: value,
+    key3: value,
+}
 
-// the keys have to be unique
+// the keys have to be unique and cannot be just a number
 // the values can be anything, strings, numbers, objects, arrays, functions, etc
 
 // add data (key value pair) to object
 // dot notation
+// myToDoObj.keyname = someValueHere
 myToDoObj.task1 = 'take out trash';
 myToDoObj.task2 = 'wash dishes';
 myToDoObj.task3 = 'wash clothes';

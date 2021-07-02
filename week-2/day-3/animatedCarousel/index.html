@@ -5,6 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>
+  <body style="background-color: black;">
+    <h1 style="color: lemonchiffon; text-align: center;">Hello, Carousel</h1>
+
+    <div id="window">
+      <div id="imageSlider">
+        <img src="./images/pika1.png" alt="pika1">
+        <img src="./images/pika2.png" alt="pika2">
+        <img src="./images/pika3.png" alt="pika3">
+      </div>
+    </div>
+    
+
+
+    <style>
+      /* # stands for id */
+      #window {
+        border: 1px solid lemonchiffon;
+        width: 200px;
+        height: 200px;
+        margin: 0px auto;
+        overflow: hidden;
+      }
+
+      #imageSlider {
+        display: flex;
+        transform: translateX(-000px); /* range from 0px to -400px */
+        animation: anime 10s infinite;
+      }
+
+      img {
+        width: 200px;
+        height: 200px;
+      }
+
+      /*
+        @keyframes allows us to define an animation
+        First you specify ow you want the element
+        to animate through the duration of work
+      */
+
+      @keyframes anime {
+        0% {
+          transition: ease-in-out; transform: translateX(0px);
+        }
+        25% {
+          transition: ease-in-out; transform: translateX(-200PX);
+        }
+        50% {
+          transition: ease-in-out; transform: translateX(-400px);
+        }
+        75% {
+          transition: ease-in-out; transform: translateX(-200PX);
+        }
+        100% {
+          transition: ease-in-out; transform: translateX(0px);
+        }
+      }
+    </style>
+
+
+
   </body>
 </html>
