@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+    <title>Document</title>
+</head>
+    <body>
+        <div id="calcContainer">            
+            
+            <table id="userButtons">
+
+                <tr>
+                    <td id="dots" colspan="4">
+                        <div class="dot0"></div>
+                        <div class="dot1"></div>
+                        <div class="dot2"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="4">
+                        <input id="userInput" type="text">
+                    </td>
+                </tr>
+
+                <tr id="darkGreyButtons">
+                    <td onclick="userInputClear()">AC</td>
+                    <td onclick="userInputPlusOrMinus()">+/-</td>
+                    <td onclick="userInputPercent()">%</td>
+                    <td onclick="addDivideOperator()" id="orangeButtons">/</td>
+                </tr>
+                <tr>
+                    <td onclick="userInputSeven()">7</td>
+                    <td onclick="userInputEight()">8</td>
+                    <td onclick="userInputNine()">9</td>
+                    <td onclick="addMultiplyOperator()" id="orangeButtons">x</td>
+                </tr>
+
+                <tr>
+                    <td onclick="userInputFour()">4</td>
+                    <td onclick="userInputFive()">5</td>
+                    <td onclick="userInputSix()">6</td>
+                    <td onclick="addSubtractOperator()" id="orangeButtons">-</td>
+                </tr>
+                <tr>
+                    <td onclick="userInputOne()">1</td>
+                    <td onclick="userInputTwo()">2</td>
+                    <td onclick="userInputThree()">3</td>
+                    <td onclick="addPlusOperator()" id="orangeButtons">+</td>
+                </tr>
+
+                <tr>
+                    <td onclick="userInputZero()" colspan="2">0</td>
+                    <td onclick="userInputPoint()">.</td>
+                    <td onclick="calculateResult()" id="orangeButtons">=</td>
+                </tr>
+
+            </table>
+        </div>
+    </body>
+</html>
