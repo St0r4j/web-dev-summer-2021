@@ -145,6 +145,8 @@ while (i < shirtSizeArray.length) {
         console.log("Large");
     } else if (size >= 20) {
         console.log("Xtra Large");
+    } else {
+        console.log('You have to type a number.')
     }
     i++
 }
