@@ -91,24 +91,7 @@ const calculateResult = function() {
 
 
     // if string contains (+)
-    if (userInput.value.includes('+')) {
-        // get each number from string e.g. 7+7, 
-        const numArray = userInput.value.split('+') // e.g. '7+7' => ['7', '+', '7']
-        // define and set variable, firstNumber = 7
-        const firstNumber = parseFloat(numArray[0])
-        // define and set variable, SecondNumber = 7
-        const secondNumber = parseFloat(numArray[1])
-
-        userInput.value = firstNumber + secondNumber
-    } else if (userInput.value.includes('-')) {
-        const numArray = userInput.value.split('-') // e.g. '7+7' => ['7', '+', '7']
-        // define and set variable, firstNumber = 7
-        const firstNumber = parsF(numArray[0])
-        // define and set variable, SecondNumber = 7
-        const secondNumber = parseFloat(numArray[1])
-
-        userInput.value = firstNumber - secondNumber
-    } else if (userInput.value.includes('*')) {
+    if (userInput.value.includes('*')) {
         const numArray = userInput.value.split('*') // e.g. '7+7' => ['7', '+', '7']
         // define and set variable, firstNumber = 7
         const firstNumber = parseFloat(numArray[0])
@@ -124,7 +107,25 @@ const calculateResult = function() {
         const secondNumber = parseFloat(numArray[1])
 
         userInput.value = firstNumber / secondNumber
-    }
+    } else if (userInput.value.includes('+')) {
+        // get each number from string e.g. 7+7, 
+        const numArray = userInput.value.split('+') // e.g. '7+7' => ['7', '+', '7']
+        // define and set variable, firstNumber = 7
+        const firstNumber = parseFloat(numArray[0])
+        // define and set variable, SecondNumber = 7
+        const secondNumber = parseFloat(numArray[1])
+
+        userInput.value = firstNumber + secondNumber
+    } else if (userInput.value.includes('-')) {
+        const numArray = userInput.value.split('-') // e.g. '7+7' => ['7', '+', '7']
+        console.log(numArray);
+        // define and set variable, firstNumber = 7
+        const firstNumber = parseFloat(numArray[0])
+        // define and set variable, SecondNumber = 7
+        const secondNumber = parseFloat(numArray[1])
+
+        userInput.value = firstNumber - secondNumber
+    } 
         
     // determine the operation i.e. +, -, *, /
     // if string contains (+)
