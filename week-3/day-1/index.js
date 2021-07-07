@@ -118,7 +118,6 @@ const calculateResult = function() {
         userInput.value = firstNumber + secondNumber
     } else if (userInput.value.includes('-')) {
         const numArray = userInput.value.split('-') // e.g. '7+7' => ['7', '+', '7']
-        console.log(numArray);
         // define and set variable, firstNumber = 7
         const firstNumber = parseFloat(numArray[0])
         // define and set variable, SecondNumber = 7
