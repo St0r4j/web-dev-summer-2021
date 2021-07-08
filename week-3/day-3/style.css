@@ -1,0 +1,41 @@
+element {            /* examples of this would be div, body, etc... */
+    property: value; /* THESE TWO MAKE UP A CSS RULE */
+}
+
+/* Using elements is not as efficient as using Classes or Ids. */
+
+/*
+Classes and Ids
+*/
+
+div {
+    display: flexgit;
+}
+
+.container {
+    font-size: large;
+}
+
+.form-group {
+    font-style: italic;
+}
+
+/* For single use only it is better to use Ids. */
+
+#singleUseOnly {
+    font-size: larger;
+}
+
+/* certain rules propogate from Parent to Child. */
+
+/* 
+
+CSS Specificity
+
+1. ID OVER CLASSES
+2. ORDER MATTERS IN A SINGLE SOURCE (last wins!!)
+3. INLINE OVER EXTERNAL
+4. INTERNAL VS EXTERNAL (THE ORDER OF LINK MATTERS ON WHICH WINS; last wins!!)
+5. !Important (Trumps all other priority listing. In CSS the "!" means important.)
+
+*/

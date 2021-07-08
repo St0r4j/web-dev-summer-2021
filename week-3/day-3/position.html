@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            min-width: 100%;
+            min-height: 100vh;
+            background-color: beige;
+        }
+
+        #modal {
+            position: absolute;
+            left: 25%;
+            top: 25%;
+            background-color: aliceblue;
+            /* z-index: 1000;
+            display: none;
+            visibility: hidden; */
+
+            /* using display: none; removes it from the DOM. */
+        }
+    </style>
+    <script src="./script.js" defer></script>
+</head>
+    <body>
+        <div id="container">
+            <div id="modal">
+                <h1>Welcome to my homepage!</h1>
+                <h2>My name is Daniel~! Enjoy</h2>
+                <button onclick="closeModal()">Close</button>
+            </div>
+            <div>
+                <header>
+                    <nav>
+                        <ul>
+                            <li>Home</li>
+                            <li>About Me</li>
+                            <li>My Portfolio</li>
+                            <li>Contact Me</li>
+                            <li>Privacy Statement</li>
+                            <li><button onclick="openModal()">Open</button></li>
+                        </ul>
+                    </nav>
+                </header>
+                <main>
+                    <div class="blogPost">
+                        <h1 class="fancyTitle">My Fourth of July</h1>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, omnis saepe, iste, ipsa distinctio sit laboriosam aspernatur tempora nisi ad velit delectus minus laudantium deserunt ex doloremque eveniet quae accusamus!
+                        </p>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>
