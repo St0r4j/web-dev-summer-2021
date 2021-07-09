@@ -9,8 +9,8 @@
 - AppendElement
 - querySelector
 - querySelectorAll
-- querySelector
-- querySelectorAll
+- classList.add
+- classList.remove
 
 ## Where you do your work:
 https://github.com/Vets-In-Tech/week3HWJune2021
