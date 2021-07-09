@@ -14,14 +14,7 @@ EVENT: when the submit button is clicked
 
 */
 
-/*
-SELECTING DOM ELEMENTS
 
-1. getElementByID  // single element
-2. getElementsByClassName
-3. getElementsByTagName
-
-*/
 
 function createNewTask() {
     console.log("the button has been clicked");
@@ -51,3 +44,19 @@ function createNewTask() {
     inputField.value = null;
     }
 }
+
+
+/*
+SELECTING DOM ELEMENTS
+
+LEVEL 1
+1. document.getElementByID  // single element
+2. document.getElementsByClassName
+3. document.getElementsByTagName
+
+LEVEL 2
+1. document.querySelector << SINGLE
+2. document.querySelectorAll << PLURAL
+
+both can accept any type of element selector (anything from level on could be used here)
+*/
